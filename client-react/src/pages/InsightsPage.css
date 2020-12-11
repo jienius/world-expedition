@@ -1,0 +1,9 @@
+.Chart-container {
+  height: 100vh;
+}
+
+.Insight-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

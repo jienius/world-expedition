@@ -1,0 +1,54 @@
+.Navigation {
+  height: 100vh;
+  color: white !important;
+  text-shadow: black 2px 0 15px !important;
+}
+
+.Navigation a {
+  color: white !important;
+  text-shadow: black 0px 0 10px !important;
+}
+
+.Navigation a:hover {
+  color: rgb(202, 197, 197) !important;
+}
+
+.background{
+    background-image: url('../assets/background.jpg');
+}
+
+ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Signout {
+  margin-top: auto;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Signout-btn {
+  margin-top: 15px;
+}
+
+.Logo {
+  width: 30%;
+  padding-top: 10px;
+}
+
+.Logo-text {
+  color: black;
+}

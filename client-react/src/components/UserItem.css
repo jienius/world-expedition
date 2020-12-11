@@ -1,0 +1,29 @@
+.User-item-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 1px solid #ced4da;
+  border-radius: 0.25em;
+  margin-top: 10px;
+  height: 120px;
+  padding: 10px;
+}
+
+.Username-container {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.Username {
+  font-weight: bold;
+  text-align: center;
+}
+
+.User-item-button {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  margin-left: auto;
+  width: 100px;
+}

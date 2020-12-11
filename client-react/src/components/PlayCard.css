@@ -1,0 +1,143 @@
+/* // Small devices (landscape phones, 576px and up) */
+
+@media (max-width: 576px) {
+    .d-sm-contents {
+        display: contents;
+    }
+}
+
+
+/* // Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .play-card-mode:hover {
+        transform: scale(1.02);
+        transition-duration: 0.25s;
+        /* transform: scale(1.05);
+        transition-duration: 0.5s; */
+    }
+}
+
+
+/* // Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {}
+
+
+/* // Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}
+
+.play-card-mode-image {
+    width: auto !important;
+    max-height: 100% !important;
+}
+
+.play-mode-card-body-height {
+    height: 50vh !important;
+}
+
+.play-card-header {
+    /* background-color: white !important; */
+    height: 20vh !important;
+}
+
+.Single {
+    background-color: #25bc9c !important;
+}
+
+
+/* .Single:hover {
+    background-color: transparent !important;
+    border: #25bc9c 2px solid;
+    box-shadow: 0 0 10px 0 #25bc9c inset, 0 0 10px 4px #25bc9c;
+}
+
+.Single:hover .Mode-pic svg {
+    color: #25bc9c;
+}
+
+.Single:hover .Mode-text {
+    color: #25bc9c;
+} */
+
+.Default {
+    background-color: #3f3f3f !important;
+}
+
+.Coop {
+    background-color: #3498db !important;
+}
+
+
+/* .Coop:hover {
+    background-color: transparent !important;
+    border: #3498db 2px solid;
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+
+.Coop:hover .Mode-pic svg {
+    color: #3498db;
+}
+
+.Coop:hover .Mode-text {
+    color: #3498db;
+} */
+
+.Comp {
+    background-color: #f1c40e !important;
+}
+
+
+/* .Comp:hover {
+    background-color: transparent !important;
+    border: #f1c40e 2px solid;
+    box-shadow: 0 0 10px 0 #f1ce0e inset, 0 0 10px 4px #f1c40e;
+}
+
+.Comp:hover .Mode-pic svg {
+    color: #f1c40e;
+}
+
+.Comp:hover .Mode-text {
+    color: #f1c40e;
+} */
+
+.Hide {
+    background-color: #8e44ad !important;
+}
+
+
+/* .Hide:hover {
+    background-color: transparent;
+    border: #8e44ad 2px solid;
+    box-shadow: 0 0 10px 0 #8e44ad inset, 0 0 10px 4px #8e44ad;
+}
+
+.Hide:hover .Mode-pic svg {
+    color: #8e44ad !important;
+}
+
+.Hide:hover .Mode-text {
+    color: #8e44ad !important;
+} */
+
+.Join {
+    background-color: #e74c3c !important;
+}
+
+
+/* 
+.Join:hover {
+    background-color: transparent;
+    border: #e74c3c 2px solid;
+    box-shadow: 0 0 10px 0 #e74c3c inset, 0 0 10px 4px #e74c3c;
+}
+
+.Join:hover .Mode-pic svg {
+    color: #e74c3c !important;
+}
+
+.Join:hover .Mode-text {
+    color: #e74c3c !important;
+} */

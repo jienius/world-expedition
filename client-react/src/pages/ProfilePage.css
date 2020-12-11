@@ -1,0 +1,43 @@
+.Content {
+  display: flex;
+  width: 100%;
+}
+
+.Header {
+  color: orange;
+  width: 100%;
+}
+
+.Avatar-upload-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+.Avatar-edit {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.Profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.Profile-edit {
+  display: flex;
+}
+
+.Name-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.Name {
+  text-align: center;
+  font-weight: bold;
+}

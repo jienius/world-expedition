@@ -1,0 +1,17 @@
+.Container {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.Content-container {
+  margin: 10px;
+}
+
+.Header {
+  color: orange;
+  width: 100%;
+}
+
+.Search-bar {
+  padding-top: 5px;
+}

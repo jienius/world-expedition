@@ -1,0 +1,58 @@
+/* .player-score-box {
+    max-width: 35vw;
+} */
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 399.98px) { 
+    .picture-rank {
+        width: 31% !important;
+    }
+
+    .player-score-box-header {
+        padding: 0 !important;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 767.98px) { 
+    .picture-rank {
+        width: 50% !important;
+    }
+}
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .picture-rank {
+        width: 50% !important;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* .player-score-box {
+        max-width: 20vw;
+    } */
+    .picture-rank {
+        width: 100%;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    /* .player-score-box {
+        max-width: 27vw;
+    } */
+    .picture-rank {
+        width: 100%;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    /* .player-score-box {
+        max-width: 35vw;
+    } */
+    .picture-rank {
+        width: 100%;
+    }
+}

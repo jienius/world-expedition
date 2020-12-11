@@ -1,0 +1,35 @@
+.Card-container {
+  width: 33.3%;
+}
+
+.Card {
+  background-color: #d1ecf1;
+  height: 25vh;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  color: #0c5460;
+  margin: 15px;
+}
+
+.Card-title {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.Card-stats-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.Card-chart-container {
+  width: 40%;
+}
+
+.Card-stats {
+  font-size: 40px;
+}

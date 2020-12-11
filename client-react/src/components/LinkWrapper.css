@@ -1,0 +1,15 @@
+.LinkWrapper {
+    width: 190px;
+    padding-top: 50px;
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none !important;
+    color: white;
+}
+
+.LinkWrapper svg {
+  width: 40px;
+  padding-right: 10px;
+}

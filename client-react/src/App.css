@@ -1,0 +1,15 @@
+.gameBckrnd {
+    /* width: 1vw;
+  height: 1vh; */
+    background-image: url("assets/WEbackground.PNG");
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.PageContent {
+    width: 100%;
+    height: 100%;
+    max-width: 100vw;
+    max-height: 100vh;
+}

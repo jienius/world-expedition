@@ -1,0 +1,170 @@
+  .fix2bottom{
+  position:fixed;
+  bottom: 0;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+.fix2bottom{
+  width:100%;
+}
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+.fix2bottom{
+  width:83%;
+}
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+.fix2bottom{
+  width:83%;
+}
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+.fix2bottom{
+  width:83%;
+}
+    }    
+
+
+
+.pointer:hover {cursor: pointer;}
+.pointer{
+  max-height: 250px;
+}
+
+
+.street-view-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#google-map {
+    height:100%;
+}
+
+.guess-map-title {
+    font-weight: bold;
+}
+
+.guess-map-wrapper {
+    width:100%;
+    height:100%;
+}
+
+.street-view-container-gamepage {
+  display: flex;
+  place-content: center;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.guess-map-modal {
+    width: 80% !important;
+    height: 70vh !important;
+    position: fixed !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    max-width: 100% !important;
+}
+
+.guess-map-modal-content {
+    width:100% !important;
+    height:80vh !important;
+}
+
+.open-guess-ux-btn {
+    position: relative;
+    width: 50%;
+    top: 95%;
+    margin-left: 50%;
+}
+
+.round-status-table {
+    table-layout: fixed ;
+    width: 100%;
+    text-align: center;
+      position:inherit;
+  /* z-index:1; */
+
+}
+
+.round-status-table td {
+    width:33%;
+}
+
+
+/* Deprecated CSS: */
+ /* .ux-pullout {
+    position: fixed;
+    height: 100%;
+    width: 5vw;
+    z-index: 20;
+    top: 0;
+    right: 0;
+    background-color: #b0b0b0ff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .open-ux-btn {
+      position: fixed;
+      right:5vw;
+  }
+
+  .ux-pullout.active {
+    width:100%;
+  }
+
+  .ux-modal {
+    z-index:10;
+    position:fixed;
+    width:100%;
+    height:100%;
+    background: #000000;
+    visibility: hidden;
+    opacity: 0%;
+    transition: visibility 0.1s, opacity 0.1s linear;
+  }
+
+  .ux-modal.active {
+    visibility: visible;
+    opacity: 50%;
+    transition: visibility 0.5s, opacity 0.5s linear;
+  }
+
+  
+  .ux-pullout .closebtn {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+  
+  .ux-pullout .closebtn:hover {
+    color: #f1f1f1;
+  } */
