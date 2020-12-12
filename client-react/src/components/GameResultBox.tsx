@@ -338,7 +338,7 @@ export default function GameResultBox(props: { theGame: GameObject, show: boolea
 
         <Modal show={displayGuessedMapModal} dialogClassName='game-result-modal' contentClassName="game-result-modal-content">
             <Modal.Header>
-                <Modal.Title>Guessed Location</Modal.Title>
+                <Modal.Title className="guess-result-title">Guessed Location</Modal.Title>
             </Modal.Header>
             <Modal.Body>
                 <PlayerGuessResultMap

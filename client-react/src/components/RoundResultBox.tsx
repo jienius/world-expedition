@@ -44,7 +44,7 @@ export default function RoundResultBox(props: { theGame: GameObject, show: boole
     function getListOfCarosels(): JSX.Element[] {
         let retVal: JSX.Element[] = [];
         retVal.push(
-            getListOfScores(props.theGame.currentRound -1)
+            getListOfScores(props.theGame.currentRound - 1)
         )
         return retVal;
     }
@@ -74,11 +74,11 @@ export default function RoundResultBox(props: { theGame: GameObject, show: boole
             if (props.theGame.gameType === GAME_MODE_HIDENSEEK) {
                 const latLngData: any = props.theGame.latLngData
                 actualLatLng = latLngData[rankedScore.username]['round-' + round];
-                console.log('GameResultBox actualLatLng', actualLatLng);
-                console.log('GameResultBox latLngData', latLngData);
+                // console.log('GameResultBox actualLatLng', actualLatLng);
+                // console.log('GameResultBox latLngData', latLngData);
             } else {
                 actualLatLng = props.theGame.latLngData[round - 1];
-                console.log('GameResultBox else actualLatLng', actualLatLng);
+                // console.log('GameResultBox else actualLatLng', actualLatLng);
             }
 
 
@@ -122,7 +122,7 @@ export default function RoundResultBox(props: { theGame: GameObject, show: boole
 
         let container: JSX.Element = (
             <Carousel.Item>
-                <div className='text-center'>
+                <div className='text-center' style={{ backgroundColor: '#ffffff80', fontWeight: 'bold' }}>
                     Last Round Score: Round {round}
                 </div>
                 <Container>
@@ -197,7 +197,7 @@ export default function RoundResultBox(props: { theGame: GameObject, show: boole
 
         <Modal show={displayGuessedMapModal} dialogClassName='game-result-modal' contentClassName="game-result-modal-content">
             <Modal.Header>
-                <Modal.Title>Guessed Location</Modal.Title>
+                <Modal.Title className="guess-result-title">Guessed Location</Modal.Title>
             </Modal.Header>
             <Modal.Body>
                 <PlayerGuessResultMap

@@ -43,7 +43,14 @@
 @media (min-width: 768.1px) {
     .streetview-pano {
         width: 80vw;
-        height: 70vh;
+        height: 55vh;
+    }
+}
+
+@media (min-width: 992px) {
+    .streetview-pano {
+        width: 80vw;
+        height: 65vh;
     }
 }
 

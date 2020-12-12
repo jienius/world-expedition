@@ -15,6 +15,13 @@
     background-image: url('./../assets/background.jpg')
 }
 
+.guess-result-title{
+    /* background-color: #ffffff80; */
+    font-weight: 'bold';
+    color: white !important;
+    text-shadow: black 3px 0 10px !important;
+}
+
 .player-box-text-align-center {
     text-align: -webkit-center;
     text-align: -moz-center;

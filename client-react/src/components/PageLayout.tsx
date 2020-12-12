@@ -28,7 +28,7 @@ const PageLayout = (props: any): JSX.Element => {
         <Col className='d-none d-lg-block' lg={2} style={{ paddingLeft: '0' }}>
           <Navigation />
         </Col>
-        <Col>{props.children}</Col>
+        <Col lg={10} >{props.children}</Col>
       </Row>
     </Container>
   );

@@ -58,14 +58,14 @@ export default function GamePage(props: { gameID: string, username: string, game
     });
 
     socket.on('game--end-game-data-result', (data: any) => {
-      console.log('game--end-game-data-result', data);
+      // console.log('game--end-game-data-result', data);
       setGameData(data);
       setShowEndGameModal(true);
 
     });
 
     socket.on('game--round-start', (data: any) => {
-      console.log('game--round-start', data);
+      // console.log('game--round-start', data);
       setSubmittedGuess(false);
 
       let timeLimitMinutes = data.timeLimitPerRound;
@@ -76,7 +76,7 @@ export default function GamePage(props: { gameID: string, username: string, game
     });
 
     socket.on('game--waiting-on-other-players', (data: any) => {
-      console.log('game--waiting-on-other-players', data);
+      // console.log('game--waiting-on-other-players', data);
       setSubmittedGuess(true);
     });
 
@@ -138,18 +138,22 @@ export default function GamePage(props: { gameID: string, username: string, game
     if (data.gameType === GAME_MODE_COOP) {
       let totalScore = 0;
       for (let round = 1; round < data.currentRound + 1; round++) {
-        let lowestScore = 0;
+        let lowestScore = MAX_ROUND_SCORE;
         for (const user of data.users) {
           if (data.scores[user.username]['round-' + round] < lowestScore) {
             lowestScore = data.scores[user.username]['round-' + round];
           }
-
+          if (lowestScore === MAX_ROUND_SCORE) {
+            lowestScore = 0;
+          }
         };
         totalScore += lowestScore;
       };
+
       score = totalScore;
     }
     else {
+      console.log(" Not Co-op");
       let totalScore = 0;
       for (let round = 1; round < data.currentRound + 1; round++) {
         if (data.scores[props.username]['round-' + round] !== MAX_ROUND_SCORE) {
